@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>petShop</title>
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+ <!--header start-->
+ <header>
+    <div class="logo">
+        <img src="./logo.webp" alt>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Featured Product</a></li>
+            <li><a href="#">Latest Product</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="header_right">
+        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        <div class="rel">
+            <i class="fa-sharp fa-solid fa-heart"></i>
+            <span class="num">2</span>
+        </div>
+        <div class="rel">
+            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+            <span class="num">2</span>
+            <span class="total">$36.98</span>
+        </div>
+    </div>
+ </header>   
+ 
+ 
+<!--banner start-->
+<div class="banner">
+    <div class="banner_text">
+        <p>Bio Organic 25% OFF</p>
+        <H1>Protect Pet !</H1>
+    </div>
+</div>
+
+
+<!--facilities start-->
+<div class="facility w-70">
+    <div class="f_item">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 288 288"><path style="fill:#877c6d"><animate repeatCount="indefinite" attributeName="d" dur="5s" values="M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45 c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2 c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7 c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z; M51,171.3c-6.1-17.7-15.3-17.2-20.7-32c-8-21.9,0.7-54.6,20.7-67.1c19.5-12.3,32.8,5.5,67.7-3.4C145.2,62,145,49.9,173,43.4 c12-2.8,41.4-9.6,60.2,6.6c19,16.4,16.7,47.5,16,57.7c-1.7,22.8-10.3,25.5-9.4,46.4c1,22.5,11.2,25.8,9.1,42.6 c-2.2,17.6-16.3,37.5-33.5,40.8c-22,4.1-29.4-22.4-54.9-22.6c-31-0.2-40.8,39-68.3,35.7c-17.3-2-32.2-19.8-37.3-34.8 C48.9,198.6,57.8,191,51,171.3z; M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45 c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2 c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7 c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z"></animate></path></svg>
+        <i class="fa-solid fa-bag-shopping"></i>
+        <h3>Order Today<br> save 15%</h3>
+    </div>
+    <div class="f_item">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 288 288"><path style="fill:#57aa5e"><animate repeatCount="indefinite" attributeName="d" dur="6s" values="M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45 c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2 c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7 c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z; M51,171.3c-6.1-17.7-15.3-17.2-20.7-32c-8-21.9,0.7-54.6,20.7-67.1c19.5-12.3,32.8,5.5,67.7-3.4C145.2,62,145,49.9,173,43.4 c12-2.8,41.4-9.6,60.2,6.6c19,16.4,16.7,47.5,16,57.7c-1.7,22.8-10.3,25.5-9.4,46.4c1,22.5,11.2,25.8,9.1,42.6 c-2.2,17.6-16.3,37.5-33.5,40.8c-22,4.1-29.4-22.4-54.9-22.6c-31-0.2-40.8,39-68.3,35.7c-17.3-2-32.2-19.8-37.3-34.8 C48.9,198.6,57.8,191,51,171.3z; M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45 c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2 c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7 c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z"></animate></path></svg>
+        <i class="fa-sharp fa-solid fa-arrow-left"></i>
+        <h3>Moneyback gurantee</h3>
+    </div>
+    <div class="f_item">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 288 288"><path style="fill:#a3c8eb"><animate repeatCount="indefinite" attributeName="d" dur="7s" values="M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45 c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2 c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7 c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z; M51,171.3c-6.1-17.7-15.3-17.2-20.7-32c-8-21.9,0.7-54.6,20.7-67.1c19.5-12.3,32.8,5.5,67.7-3.4C145.2,62,145,49.9,173,43.4 c12-2.8,41.4-9.6,60.2,6.6c19,16.4,16.7,47.5,16,57.7c-1.7,22.8-10.3,25.5-9.4,46.4c1,22.5,11.2,25.8,9.1,42.6 c-2.2,17.6-16.3,37.5-33.5,40.8c-22,4.1-29.4-22.4-54.9-22.6c-31-0.2-40.8,39-68.3,35.7c-17.3-2-32.2-19.8-37.3-34.8 C48.9,198.6,57.8,191,51,171.3z; M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45 c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2 c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7 c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z"></animate></path></svg>
+        <i class="fa-sharp fa-solid fa-headset"></i>
+        <h3>Customer support</h3>
+    </div>
+</div>
+
+
+
+<!--shop category-->
+<section class="w-70">
+    <div class="shop_category">
+        <div class="heading">
+            <h3>Shop By Category</h3>
+            <div class="paw">
+                <i class="fa-solid fa-paw"></i>
+            </div>
+        </div>
+        <div class="food">
+            <div class="food_items">
+                <div class="img">
+                    <img src="./dog food.jpeg" alt="">
+                </div>
+                <div class="food_details">
+                    <div class="reviews">
+                        <i class="fa-regular fa-stars"></i>
+                        <i class="fa-regular fa-stars"></i>
+                        <i class="fa-regular fa-stars"></i>
+                        <i class="fa-regular fa-stars"></i>
+                        <i class="fa-regular fa-stars"></i>
+                        
+                    </div>
+                    <h4>Dogs food</h4>
+                    <h3>$20</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sapiente neque distinctio! Quasi.</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="food_items">
+                <div class="img">
+                    <img src="./bird food.webp" alt="">
+                </div>
+                <div class="food_details">
+                    <div class="review">
+                        <i class="fa-regular fa-stars"></i>
+                        <i class="fa-regular fa-stars"></i>
+                        <i class="fa-regular fa-stars"></i>
+                        <i class="fa-regular fa-stars"></i>
+                        <i class="fa-regular fa-stars"></i>
+                    </div>
+                    <h4>Birds food</h4>
+                    <h3>$22</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sapiente neque distinctio! Quasi.</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+            <div class="food_items">
+                <div class="img">
+                    <img src="./cat food.png" alt="">
+                </div>
+                <div class="food_details">
+                    <div class="review">
+                        <i class="fa-regular fa-stars"></i>
+                        <i class="fa-regular fa-stars"></i>
+                        <i class="fa-regular fa-stars"></i>
+                        <i class="fa-regular fa-stars"></i>
+                        <i class="fa-regular fa-stars"></i>
+                    </div>
+                    <h4>Cats food</h4>
+                    <h3>$25</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sapiente neque distinctio! Quasi.</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--shop by category(2)-->
+<section id="shop_category" class="w-70">
+    <div class="shop_category">
+        <div class="heading">
+            <h3>Shop By Category</h3>
+            <div class="paw">
+                <i class="fa-solid fa-paw"></i>
+            </div>
+        </div>
+        <div class="pet_list">
+            <div class="single_pet">
+                <div class="img">
+                    <img src="./single dog.jpg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 288 288"><path style="fill:#f6f6f6"><animate repeatCount="indefinite" attributeName="d" dur="5s" values="M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45 c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2 c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7 c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z; M51,171.3c-6.1-17.7-15.3-17.2-20.7-32c-8-21.9,0.7-54.6,20.7-67.1c19.5-12.3,32.8,5.5,67.7-3.4C145.2,62,145,49.9,173,43.4 c12-2.8,41.4-9.6,60.2,6.6c19,16.4,16.7,47.5,16,57.7c-1.7,22.8-10.3,25.5-9.4,46.4c1,22.5,11.2,25.8,9.1,42.6 c-2.2,17.6-16.3,37.5-33.5,40.8c-22,4.1-29.4-22.4-54.9-22.6c-31-0.2-40.8,39-68.3,35.7c-17.3-2-32.2-19.8-37.3-34.8 C48.9,198.6,57.8,191,51,171.3z; M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45 c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2 c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7 c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z"></animate></path></svg>
+                </div>
+                <h4>all for dogs</h4>
+            </div>
+            <div class="single_pet">
+                <div class="img">
+                    <img src="./SINGLE bird.jpg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 288 288"><path style="fill:#f6f6f6"><animate repeatCount="indefinite" attributeName="d" dur="5s" values="M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45 c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2 c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7 c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z; M51,171.3c-6.1-17.7-15.3-17.2-20.7-32c-8-21.9,0.7-54.6,20.7-67.1c19.5-12.3,32.8,5.5,67.7-3.4C145.2,62,145,49.9,173,43.4 c12-2.8,41.4-9.6,60.2,6.6c19,16.4,16.7,47.5,16,57.7c-1.7,22.8-10.3,25.5-9.4,46.4c1,22.5,11.2,25.8,9.1,42.6 c-2.2,17.6-16.3,37.5-33.5,40.8c-22,4.1-29.4-22.4-54.9-22.6c-31-0.2-40.8,39-68.3,35.7c-17.3-2-32.2-19.8-37.3-34.8 C48.9,198.6,57.8,191,51,171.3z; M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45 c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2 c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7 c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z"></animate></path></svg>
+                </div>
+                <h4>all for birds</h4>
+            </div>
+            <div class="single_pet">
+                <div class="img">
+                    <img src="./single cat.webp" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 288 288"><path style="fill:#f6f6f6"><animate repeatCount="indefinite" attributeName="d" dur="5s" values="M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45 c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2 c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7 c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z; M51,171.3c-6.1-17.7-15.3-17.2-20.7-32c-8-21.9,0.7-54.6,20.7-67.1c19.5-12.3,32.8,5.5,67.7-3.4C145.2,62,145,49.9,173,43.4 c12-2.8,41.4-9.6,60.2,6.6c19,16.4,16.7,47.5,16,57.7c-1.7,22.8-10.3,25.5-9.4,46.4c1,22.5,11.2,25.8,9.1,42.6 c-2.2,17.6-16.3,37.5-33.5,40.8c-22,4.1-29.4-22.4-54.9-22.6c-31-0.2-40.8,39-68.3,35.7c-17.3-2-32.2-19.8-37.3-34.8 C48.9,198.6,57.8,191,51,171.3z; M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45 c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2 c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7 c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z"></animate></path></svg>
+                </div>
+                <h4>all for cats</h4>
+            </div>
+        </div>
+   </div>
+</section>
+
+
+<!--featured product-->
+<section id="feature_product" class="w-70">
+    <div class="feature_product">
+        <div class="heading">
+            <h3>Shop By Category</h3>
+            <div class="paw">
+                <i class="fa-solid fa-paw"></i>
+            </div>
+        </div> 
+        <div class="feature_product">
+            <div class="fp_items">
+                <div class="img">
+                    <img src="./feature_product-1 dog.webp" alt="">
+                    <div class="tag">-10% Sales</div>
+                    <div class="hidden_icons">
+                        <i class="fa-sharp fa-solid fa-heart"></i>  
+                        <i class="fa-solid fa-eye"></i> 
+                    </div>
+                </div>
+                <div class="fp_details">
+                    <div class="reviews">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="sub_category">~PETS~</span>
+                    <h6>Small Dogs Foods</h6>
+                    <div class="price">
+                        <del>$250</del>
+                        <span>$230</span>
+                    </div>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+            <div class="fp_items">
+                <div class="img">
+                    <img src="./feature p2 cat.jpeg" alt="">
+                    <div class="tag">-10% Sales</div>
+                    <div class="hidden_icons">
+                        <i class="fa-sharp fa-solid fa-heart"></i>  
+                        <i class="fa-solid fa-eye"></i> 
+                    </div>
+                </div>
+                <div class="fp_details">
+                    <div class="reviews">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="sub_category">~PETS~</span>
+                    <H6>Small cats Foods</H6>
+                    <div class="price">
+                        <del>$200</del>
+                        <span>$180</span>
+                    </div>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+            <div class="fp_items">
+                <div class="img">
+                    <img src="./feature_product-2 bird.webp" alt="">
+                    <div class="tag">-5% Sales</div>
+                    <div class="hidden_icons">
+                        <i class="fa-sharp fa-solid fa-heart"></i>  
+                        <i class="fa-solid fa-eye"></i> 
+                    </div>
+                </div>
+                <div class="fp_details">
+                    <div class="reviews">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="sub_category">~PETS~</span>
+                    <h6>birds cages</h6>
+                    <div class="price">
+                        <del>$220</del>
+                        <span>$230</span>
+                    </div>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<!--3rd banner-->
+<section id="three_banner" class="w-70">
+    <div class="three_banner">
+        <div class="img">
+            <img src="./left_banner3.jpg" alt="">
+            <div class="text">
+                <h5>Today Only</h5>
+                <h4>Big Sale <br> UP TO 60%</h4>
+            </div>
+        </div>
+        <div class="img">
+            <img src="./right_banner3.jpg" alt="">
+            <div class="text">
+                <h5>Today Only</h5>
+                <h4>Get An Extra <br> 10% OFF</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<!--2nd banner--
+<div class="second_banner">
+    <div class="text">
+        <h5>Bio Organic 30% OFF</h5>
+        <h2>Teasty And Healthy <br> Food..</h2>
+        <button>Shop Now</button>    
+    </div>
+</div>-->
+
+<!--latest product-->
+<section id="latest_product" class="w-70">
+    <div class="latest_product">
+       <div class="heading">
+            <h3>Shop By Category</h3>
+            <div class="paw">
+               <i class="fa-solid fa-paw"></i>
+            </div>
+        </div>
+        <div class="latest_product">
+            <div class="lp_items">
+                <div class="img">
+                    <img src="./latest bird cage.webp" alt="">
+                    <div class="tag">-40%</div>
+                    <div class="hidden_icons">
+                        <i class="fa-sharp fa-solid fa-heart"></i>  
+                        <i class="fa-solid fa-eye"></i>  
+                    </div>
+                </div>
+                <div class="lp_details">
+                    <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Bird Cages</h4>
+                    <div class="price">
+                        <del>$280</del>
+                        <span>230</span>
+                    </div>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="lp_items">
+                <div class="img">
+                    <img src="./latest doc food.jpg" alt="">
+                    <div class="tag">-30%</div>
+                    <div class="hidden_icons">
+                        <i class="fa-sharp fa-solid fa-heart"></i>  
+                        <i class="fa-solid fa-eye"></i>  
+                    </div>
+                </div>
+                <div class="lp_details">
+                    <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Dogs Food </h4>
+                    <div class="price">
+                        <del>$250</del>
+                        <span>230</span>
+                    </div>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+            <div class="lp_items">
+                <div class="img">
+                    <img src="./latest bird food.webp" alt="">
+                    <div class="tag">-20%</div>
+                    <div class="hidden_icons">
+                        <i class="fa-sharp fa-solid fa-heart"></i>  
+                        <i class="fa-solid fa-eye"></i>  
+                    </div>
+                </div>
+                <div class="lp_details">
+                    <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Bird Food</h4>
+                    <div class="price">
+                        <del>$200</del>
+                        <span>150</span>
+                    </div>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+            <div class="lp_items">
+                <div class="img">
+                    <img src="./latest_product-5 cat p.webp" alt="">
+                    <div class="tag">-40%</div>
+                    <div class="hidden_icons">
+                        <i class="fa-sharp fa-solid fa-heart"></i>  
+                        <i class="fa-solid fa-eye"></i>  
+                    </div>
+                </div>
+                <div class="lp_details">
+                    <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Fitness Jumpsuit</h4>
+                    <div class="price">
+                        <del>$400</del>
+                        <span>$350</span>
+                    </div>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+           
+        </div> 
+    </div>
+</section>
+
+<!--food banner-->
+<div class="bf_banner">
+    <div class="bf_food">
+        <img src="./food banner.png" alt="">
+    </div>
+    <div class="left_text">
+        <div>
+            <h4>Real Food</h4>
+            <p>Meat and veggies in simple recipies,for dogs</p>
+        </div>
+        <div>
+            <h4>USDA</h4>
+            <P>Safety before available to pets</P>
+        </div>
+    </div>
+
+    <div class="Right_text">
+        <div>
+            <h4>Made Fresh</h4>
+            <p>Maintain whole food and nutrition</p>
+        </div>
+        <div>
+            <h4>Vep Approved</h4>
+            <P>Nutrition that exceeds industry standarts for pets</P>
+        </div>
+    </div>
+</div>
+
+<!--footer start-->
+<footer id="footer">
+    <!--f_top-->
+    <div class="footer_top w-70">
+        <div class="img">
+            <img src="./logo.webp" alt="">
+        </div>
+        <div class="menu">
+            <ui>
+                <li><a href="#">My account</a></li>
+                <li><a href="#">view cart</a></li>
+                <li><a href="#">order status</a></li>
+                
+            </ui>
+        </div>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i> 
+            <i class="fa-brands fa-google-plus-g"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-pinterest"></i>
+        </div>
+    </div>
+    <!--f_bottom-->
+    <div class="footer_bottom">
+        <div class="payment-link">
+            <i class="fa-brands fa-amazon-pay"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-visa"></i> 
+            <i class="fa-brands fa-google-pay"></i>
+            <i class="fa-brands fa-cc-apple-pay"></i>
+        </div>
+        <small>Designed by ~RHS CREATION~</small>
+    </div>
+</footer>
+
+</body>
+</html>
