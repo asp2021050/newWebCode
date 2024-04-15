@@ -644,7 +644,7 @@ header .header_right .rel .total{
 .footer_top .menu ul li{
     padding: 0 15px;
 }
-.footer_top ..menu ul li a{
+.footer_top .menu ul li a{
     color: #272727;
     font-size: 14px;
     letter-spacing: 0.5px;
